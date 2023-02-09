@@ -1,0 +1,72 @@
+<footer class="footer"><h1 class="logo">U P I E R</h1><p class="slogan">Shareable Payment's Link for<!-- --> 
+img src="/images/upi.svg" class="upilogo" width="40" alt="Upi Icon">
+</p><p class="tpf">
+<u href="/privacy-policy">Privacy Policy</u>
+</p><p class="tuhin">An Open Source Project by
+<!-- --> 
+<a href="http://thetuhin.com/?ref=upier" target="_blank" rel="noreferrer">Tuhin</a></p>
+<img src="/images/github.svg" class="center" width="35" alt="Github"></footer>
+
+.footer {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 340px;
+    height: 220px;
+    background: #fff;
+    color: #000
+}
+
+.footer .logo {
+    font-family: Bitter,serif;
+    font-size: 30px;
+    padding: 12px 0
+}
+
+.footer .logo,.footer .slogan {
+    font-weight: 700;
+    text-align: center
+}
+
+.footer .slogan {
+    font-size: 12px;
+    -webkit-transform: translateY(-22px);
+    transform: translateY(-22px)
+}
+
+.footer .upilogo {
+    -webkit-transform: translateY(6px);
+    transform: translateY(6px)
+}
+
+.footer .tpf {
+    font-family: Bitter,serif;
+    font-size: 10px;
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px)
+}
+
+.footer .tpf,.footer .tuhin {
+    color: #000;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer
+}
+
+.footer .tuhin {
+    font-size: 12px;
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+    padding-top: 2px
+}
+
+.footer .tuhin a {
+    text-decoration: none;
+    color: #6e87b6
+}
+
+.footer .center {
+    cursor: pointer;
+    text-align: center;
+    display: block
+}

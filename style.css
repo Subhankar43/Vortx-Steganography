@@ -1,6 +1,6 @@
 .cont {
   display: flex;
-  height: 90vh;
+  height: 80vh;
   width: 100vw;
   justify-content: center;
   align-items: center;
@@ -10,7 +10,6 @@
 .img-cont {
   margin-top: 5rem;
   display: flex;
-
 }
 
 .img1 {
@@ -22,8 +21,51 @@ img {
   width: 300px;
 }
 
-
 .opa {
   opacity: 0;
   width: 10px;
+}
+
+.footer {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  width: 340px;
+  height: 10px;
+  background: #fff;
+  color: #000;
+}
+.footer .logo {
+  font-family: Bitter, serif;
+  font-size: 30px;
+  padding: 12px 0;
+}
+.footer .logo,
+.footer .slogan {
+  font-weight: 700;
+  text-align: center;
+}
+.footer .subhankar {
+  color: #000;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+}
+
+.footer .subhankar {
+  font-size: 12px;
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  padding-top: 2px;
+}
+
+.footer .subhankar a {
+  text-decoration: none;
+  color: #6e87b6;
+}
+
+.footer .center {
+  cursor: pointer;
+  text-align: center;
+  display: block;
 }

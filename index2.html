@@ -12,11 +12,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
-    <script
-      src="https://cdn.jsdelivr.net/gh/Subhankar43/vortxsteganoprivate/steganography.min.js"
-      integrity="sha384-3ti1qACJltRWj0h2RZxryynzZY3XLJQJJCF9QqSRCqrmuhHripAZ8fdEW7F80vgr"
-      crossorigin="anonymous"
-    ></script>
+    <script src="steganography.min.js"></script>
   </head>
   <body>
     <div class="cont">
@@ -31,6 +27,7 @@
         <div class="ui input">
           <input id="text" type="text" />
         </div>
+
         <button class="ui secondary button" onclick="hideText()">
           Click me!
         </button>
@@ -39,13 +36,15 @@
         <div class="img1">
           <h5 style="font-size: 2vw">Uploaded Image</h5>
 
-          <img id="image1" src=" " alt="" />
+          <img id="image1" src=" " alt="" style="max-width: 40%; height: auto" />
         </div>
+
         <div class="">
           <h5 style="font-size: 2vw">Encoded Image</h5>
-          <img id="image2" src=" " alt="" />
+          <img id="image2" src=" " alt="" style="max-width: 40%; height: auto" />
         </div>
       </div>
+
       <div class="">
         <input
           class="ui secondary button"
@@ -59,24 +58,11 @@
           src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
           alt=""
         />
-        <h5 style="font-size: 2vw">Decoded Message</h5>
+        <h5 style="font-size: 2vw">Decoded Message:</h5>
         <h2 id="decoded"></h2>
       </div>
     </div>
-    <footer class="footer">
-      <h1 class="logo">V o R t E x O g R a P h Y</h1>
-      <p class="subhankar">
-        An Open Source Project by<a
-          href="https://github.com/Subhankar43/Vortx-Steganography"
-          target="_blank"
-          rel="noreferrer">
-          Subhankar</a>
-      </p>
-    </footer>
-    <script
-      src="https://cdn.jsdelivr.net/gh/Subhankar43/vortxsteganoprivate/script.js"
-      integrity="sha384-OMULWizhywU8u9W7U+ASg7pg2i6jMoIwD8fExCCYEB/f02cQT58uBmGt+nDDS335"
-      crossorigin="anonymous"
-    ></script>
+
+    <script src="index.js"></script>
   </body>
 </html>
