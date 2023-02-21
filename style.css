@@ -1,11 +1,12 @@
 .cont {
   display: flex;
-  height: 80vh;
-  width: 100vw;
+  height: auto;
+  width: 100%;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: column; 
 }
+
 .img-cont {
   margin-top: 5rem;
   display: flex;
@@ -18,29 +19,35 @@
 
 img {
   width: 300px;
+  display: flex;
 }
 
 .opa {
+  display: flex;
   opacity: 0;
   width: 10px;
 }
+
 .header {
+  display: flex;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 30px;
   width: 400px;
   height: 80px;
   background: #fff;
   color: #000;
+  text-align: center;
 }
+
 .header .logo {
   font-family: Bitter, serif;
   font-size: 30px;
   padding: 12px 0;
   font-weight: 700;
-  text-align: center;
 }
+
 .footer .subhankar {
+  display: flex;
   color: #000;
   font-weight: 700;
   text-align: center;
@@ -48,17 +55,70 @@ img {
   font-size: 25px;
   -webkit-transform: translateY(-5px);
   transform: translateY(-5px);
-  padding-top: 2px;
+  padding-top: 150px;
 }
+
 .footer .subhankar a {
   text-decoration: none;
-  color: #5844a0;
+  background: linear-gradient(to right, #833AB4, #FD1D1D, #F77737, #FCAF45);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
+
 .center {
   text-align: center;
   width: 100%;
-}
-.fas {
   cursor: pointer;
   color: black;
+}
+
+/* For screens smaller than 768px */
+@media only screen and (max-width: 767px) {
+  .cont {
+    padding: 1rem;
+  }
+  .img-cont {
+    margin-top: 2rem;
+    flex-direction: column;
+  }
+  .img1 {
+    margin-right: 0;
+    margin-bottom: 5rem;
+  }
+  img {
+    width: 100%;
+  }
+  .header {
+    width: 100%;
+  }
+}
+
+/* For screens larger than 768px but smaller than 1200px */
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .cont {
+    padding: 2rem;
+  }
+  .img-cont {
+    margin-top: 5rem;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .img1 {
+    margin-right: 15rem;
+    margin-bottom: 10rem;
+  }
+  img {
+    width: 300px;
+  }
+  .header {
+    width: 400px;
+  }
+}
+
+/* For screens larger than 1200px */
+@media only screen and (min-width: 1200px) {
+  .cont {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 }

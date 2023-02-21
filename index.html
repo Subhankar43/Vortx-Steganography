@@ -12,21 +12,23 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
-    <script
-      src="https://cdn.jsdelivr.net/gh/Subhankar43/vortxsteganoprivate/steganography.min.js"
-      integrity="sha384-3ti1qACJltRWj0h2RZxryynzZY3XLJQJJCF9QqSRCqrmuhHripAZ8fdEW7F80vgr"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://kit.fontawesome.com/5db342f1f2.js" crossorigin="anonymous"></script>
+    <script src="steganography.min.js"></script>
+    <script src="https://kit.fontawesome.com/5db342f1f2.js" crossorigin="anonymous"> </script>
   </head>
   <body>
     <div class="header">
-      <h1 class="logo">V <i class="fa fa-cog fa-spin fa-fw"></i> R T E X <i class="fa fa-cog fa-spin fa-fw"></i>
-         G R A P H Y</h1>
+      <h1 class="logo">
+        V <i class="fa fa-cog fa-spin fa-fw"></i> R T E X
+        <i class="fa fa-cog fa-spin fa-fw"></i> G R A P H Y
+      </h1>
     </div>
+
     <div class="cont">
-      <div class="">
-        <input
+      
+
+
+        <div class="">
+                  <input
           class="ui primary button"
           type="file"
           name="pic"
@@ -36,52 +38,53 @@
         <div class="ui input">
           <input id="text" type="text" />
         </div>
-        <button class="ui secondary button" onclick="hideText()">
-          Click me!
-        </button>
-      </div>
-      <div class="img-cont">
-        <div class="img1">
-          <h5 style="font-size: 2vw">Uploaded Image</h5>
 
-          <img id="image1" src=" " alt="" />
+        <button class="ui secondary button" onclick="hideText()">
+          Click me !
+        </button>
+
         </div>
-        <div class="">
-          <h5 style="font-size: 2vw">Encoded Image</h5>
-          <img id="image2" src=" " alt="" />
+        <div class="img-cont">
+          <div  class="img1">
+            <h5 style="font-size:2vw; display:flex">Uploaded Image</h5>
+
+            <img id="image1" src=" " alt="" />
+          </div>
+
+
+          <div class="">
+            <h5 style="font-size:2vw; display:flex">Encoded Image</h5>
+            <img id="image2" src=" " alt="" />
+
+          </div>
+
         </div>
-      </div>
-      <div class="">
-        <input
-          class="ui secondary button"
-          type="file"
-          name="pic"
-          accept="image/*"
-          onchange="decode(this);"
-        />
-        <img
-          class="opa"
-          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-          alt=""
-        />
-        <h5 style="font-size: 2vw">Decoded Message</h5>
-        <h2 id="decoded"></h2>
-      </div>
+
+        
+    <div class="">
+
+      <input class="ui secondary button" type="file" name="pic" accept="image/*" onchange="decode(this);" />
+      <img class = "opa" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="">
+      <h5 style="font-size: 2vw; display:flex">Decoded Message:</h5>
+      <h2 id="decoded"></h2>
+
     </div>
+
     <footer class="footer">
-      <p class="subhankar"> Made with ❤️ By -
-        <a href="https://www.instagram.com/subhankarkundu43"
+      <p class="subhankar">
+        Made with ❤️ By -
+        <a
+          href="https://www.instagram.com/subhankarkundu43"
           target="_blank"
-          rel="noreferrer">
+          rel="noreferrer"
+        >
           VortX
-        </a> 
+        </a>
       </p>
-      <a href="https://github.com/Subhankar43"><i class="fas fa-brands fa-github fa-5x center"></i></a>
+      <a href="https://github.com/Subhankar43" target="_blank" rel="noreferrer"
+        ><i class="fa-brands fa-github fa-5x center"></i></a>
     </footer>
-    <script
-      src="https://cdn.jsdelivr.net/gh/Subhankar43/vortxsteganoprivate/script.js"
-      integrity="sha384-OMULWizhywU8u9W7U+ASg7pg2i6jMoIwD8fExCCYEB/f02cQT58uBmGt+nDDS335"
-      crossorigin="anonymous"
-    ></script>
+   </div>
+    <script src="script.js"></script>
   </body>
 </html>
