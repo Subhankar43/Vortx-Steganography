@@ -5,7 +5,7 @@
 
  Steganography is the practice of hiding secret information within a cover message or media without changing the meaning or appearance of the original content. Steganography techniques can be applied to various forms of media such as images, audio, and video files. This technique is often used for security purposes, to hide sensitive information, and to prevent unauthorized access.
 
-# Usage:
+# 🛠️ Usage:
 The usage of steganography tools varies depending on the tool used. Generally, the following steps are involved in using steganography tools:
 
 - Choose the cover media: This is the file that will be used to hide the secret message.
